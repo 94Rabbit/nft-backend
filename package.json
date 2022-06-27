@@ -1,0 +1,11 @@
+{
+  "name": "nft-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:94Rabbit/nft-backend.git",
+  "author": "lrabbit <15821745523@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
