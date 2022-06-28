@@ -9,5 +9,5 @@ const mysql = require('serverless-mysql')({
 const sql = `create table users (name varchar(24))`;
 const test = `show tables`;
 mysql.query(test).then(res=>{
-    console.log(res);
+    console.log(res, 222);
 });
