@@ -42,23 +42,35 @@ app.get('/getVerificationCode', (req,res)=> {
 app.post('/login',(req,res)=>{
   const { code, phone } = req.body;
   console.log(code, phone);
-  if(code === _code && phone === _phone){
-    res.json({
-      success: true,
-      msg: '登录成功',
-      token: '12345678',
-      userInfo: {
-        wallet: '0xsdasa23fahshs',
-        name: `收藏家${Math.random().toFixed(3)}`,
-        avatar: 'https://i01piccdn.sogoucdn.com/be550b6bf45fd8ad'
-      }
-    });
-  } else {
-    res.json({
-      success: false,
-      msg: '登录失败',
-    });
-  }
+  // if(code === _code && phone === _phone){
+  //   res.json({
+  //     success: true,
+  //     msg: '登录成功',
+  //     token: '12345678',
+  //     userInfo: {
+  //       wallet: '0xsdasa23fahshs',
+  //       name: `收藏家${Math.random().toFixed(3)}`,
+  //       avatar: 'https://i01piccdn.sogoucdn.com/be550b6bf45fd8ad'
+  //     }
+  //   });
+  // } else {
+  //   res.json({
+  //     success: false,
+  //     msg: '登录失败',
+  //     code,
+  //     phone,
+  //   });
+  // }
+  res.json({
+    success: true,
+    msg: '登录成功',
+    token: '12345678',
+    userInfo: {
+      wallet: '0xsdasa23fahshs',
+      name: `收藏家${Math.random().toFixed(3)}`,
+      avatar: 'https://i01piccdn.sogoucdn.com/be550b6bf45fd8ad'
+    }
+  });
 });
 
 // get user info
